@@ -1,3 +1,7 @@
 <resources>
     <string name="app_name">FastTripPlanner</string>
+    <string name="MainActivityLabelDestino">Insira o Destino:</string>
+    <string name="MainActivityLabelDias">Insira o total de dias:</string>
+    <string name="MainActivityLabelOrcamento">Insira o orçamento diário:</string>
+    <string name="next">Prosseguir</string>
 </resources>
