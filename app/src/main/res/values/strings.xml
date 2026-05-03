@@ -13,4 +13,9 @@
     <string name="MainActivityLabelAlimentacao">Alimentação - R$ 50,00 por dia</string>
     <string name="MainActivityLabelPasseios">Passeios -  R$ 120,00 por dia</string>
     <string name="finish">Finalizar</string>
+    <string name="MainActivityLabelValorTotal">Valor total:</string>
+    <string name="MainActivityLabelTotalDias">Duração da viagem:</string>
+    <string name="MainActivityLabelTipoHospedagem">Hospedagem escolhida:</string>
+    <string name="MainActivityLabelServicosSelecionados">Serviços escolhidos:</string>
+    <string name="restart">Recomeçar</string>
 </resources>

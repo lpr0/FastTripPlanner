@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ResumoActivity">
+
+
+    <TextView
+        android:id="@+id/titulo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/app_name"
+        android:textSize="32sp"
+        android:textAlignment="center"
+        android:padding="10dp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/labelValorTotal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/MainActivityLabelValorTotal"
+        android:textSize="24sp"
+        android:paddingTop="15dp"
+        android:paddingHorizontal="10dp"
+        android:layout_marginHorizontal="10dp"
+        android:textAlignment="center"
+        app:layout_constraintTop_toBottomOf="@+id/titulo"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/valorTotal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:textSize="22sp"
+        android:paddingHorizontal="10dp"
+        android:layout_marginHorizontal="10dp"
+        android:textAlignment="center"
+        app:layout_constraintTop_toBottomOf="@+id/labelValorTotal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/labelTotalDias"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/MainActivityLabelTotalDias"
+        android:textSize="22sp"
+        android:paddingTop="15dp"
+        android:paddingHorizontal="10dp"
+        android:layout_marginHorizontal="10dp"
+        app:layout_constraintTop_toBottomOf="@+id/valorTotal"
+        app:layout_constraintStart_toStartOf="parent" />
+    <TextView
+        android:id="@+id/totalDias"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:textSize="22sp"
+        android:paddingTop="15dp"
+        app:layout_constraintTop_toBottomOf="@+id/valorTotal"
+        app:layout_constraintStart_toEndOf="@id/labelTotalDias" />
+
+    <TextView
+        android:id="@+id/labelTipoHospedagem"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/MainActivityLabelTipoHospedagem"
+        android:textSize="22sp"
+        android:paddingTop="15dp"
+        android:paddingHorizontal="10dp"
+        android:layout_marginHorizontal="10dp"
+        app:layout_constraintTop_toBottomOf="@+id/labelTotalDias"
+        app:layout_constraintStart_toStartOf="parent" />
+    <TextView
+        android:id="@+id/tipoHospedagem"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:textSize="22sp"
+        android:paddingTop="15dp"
+        app:layout_constraintTop_toBottomOf="@+id/labelTotalDias"
+        app:layout_constraintStart_toEndOf="@id/labelTipoHospedagem" />
+
+    <TextView
+        android:id="@+id/labelServicosSelecionados"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/MainActivityLabelServicosSelecionados"
+        android:textSize="22sp"
+        android:paddingTop="15dp"
+        android:paddingHorizontal="10dp"
+        android:layout_marginHorizontal="10dp"
+        app:layout_constraintTop_toBottomOf="@+id/labelTipoHospedagem"
+        app:layout_constraintStart_toStartOf="parent" />
+    <TextView
+        android:id="@+id/servicosSelecionados"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:textSize="22sp"
+        android:paddingTop="15dp"
+        app:layout_constraintTop_toBottomOf="@+id/labelTipoHospedagem"
+        app:layout_constraintStart_toEndOf="@id/labelServicosSelecionados" />
+
+
+    <Button
+        android:id="@+id/restart"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAlignment="center"
+        android:text="@string/restart"
+        android:paddingVertical="15dp"
+        android:layout_margin="10dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
