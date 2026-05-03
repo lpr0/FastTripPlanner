@@ -134,14 +134,26 @@
 
     <Button
         android:id="@+id/finish"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_width="120dp"
+        android:layout_height="60dp"
         android:textAlignment="center"
         android:text="@string/finish"
         android:paddingVertical="15dp"
         android:layout_margin="10dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/back" />
+
+    <Button
+        android:id="@+id/back"
+        android:layout_width="120dp"
+        android:layout_height="60dp"
+        android:textAlignment="center"
+        android:text="@string/back"
+        android:paddingVertical="15dp"
+        android:layout_margin="10dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/finish"
         app:layout_constraintStart_toStartOf="parent" />
 
 

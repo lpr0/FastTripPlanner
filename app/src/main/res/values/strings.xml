@@ -18,4 +18,5 @@
     <string name="MainActivityLabelTipoHospedagem">Hospedagem escolhida:</string>
     <string name="MainActivityLabelServicosSelecionados">Serviços escolhidos:</string>
     <string name="restart">Recomeçar</string>
+    <string name="back">Voltar</string>
 </resources>
