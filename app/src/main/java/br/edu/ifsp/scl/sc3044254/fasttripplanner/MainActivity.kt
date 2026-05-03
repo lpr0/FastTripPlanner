@@ -32,13 +32,39 @@ class MainActivity : AppCompatActivity() {
         }
 
         binding.next.setOnClickListener { view ->
-            val hospedagemIntent = Intent(this, HospedagemActivity::class.java)
+            val destino = binding.destino.text.toString()
+            val dias = binding.dias.text.toString()
+            val orcamento = binding.orcamento.text.toString()
 
-            hospedagemIntent.putExtra("destino", binding.destino.text.toString())
-            hospedagemIntent.putExtra("dias", binding.dias.text.toString())
-            hospedagemIntent.putExtra("orcamento", binding.orcamento.text.toString())
+            if (validarDados(destino, dias, orcamento)) {
+                val hospedagemIntent = Intent(this, HospedagemActivity::class.java)
 
-            hospedagemActivityLauncher.launch(hospedagemIntent)
+                hospedagemIntent.putExtra("destino",destino )
+                hospedagemIntent.putExtra("dias", dias)
+                hospedagemIntent.putExtra("orcamento", orcamento)
+
+                hospedagemActivityLauncher.launch(hospedagemIntent)
+            }
         }
     }
+
+    private fun validarDados (destino: String, dias: String, orcamento: String): Boolean {
+        if (destino.isBlank() || dias.isBlank() || orcamento.isBlank()) {
+            Toast.makeText(this,
+                "Prencha todos os campos para continuar.", Toast.LENGTH_SHORT).show()
+            return false
+        }
+        if (dias == "0") {
+            Toast.makeText(this,
+                "Informe uma quantidade de dias válida", Toast.LENGTH_SHORT).show()
+            return false
+        }
+        if (orcamento == "0") {
+            Toast.makeText(this,
+                "Informe um orçamento válido.", Toast.LENGTH_SHORT).show()
+            return false
+        }
+        return true
+    }
 }
+
