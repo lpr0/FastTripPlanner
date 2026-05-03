@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/titulo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/app_name"
+        android:textSize="32sp"
+        android:textAlignment="center"
+        android:padding="10dp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/labelHospedagem"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/MainActivityLabelHospedagem"
+        android:textSize="24sp"
+        android:paddingTop="15dp"
+        android:paddingHorizontal="10dp"
+        android:layout_marginHorizontal="10dp"
+        app:layout_constraintTop_toBottomOf="@+id/titulo"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <RadioGroup
+        android:id="@+id/hospedagem"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginHorizontal="10dp"
+        android:layout_marginTop="20dp"
+        app:layout_constraintTop_toBottomOf="@+id/labelHospedagem"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+        <RadioButton
+            android:id="@+id/economica"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/MainActivityLabelEconomica"
+            android:textSize="22sp"
+            android:paddingHorizontal="10dp"
+
+            app:layout_constraintTop_toBottomOf="@+id/labelHospedagem"
+            app:layout_constraintStart_toStartOf="parent"
+            />
+        <RadioButton
+            android:id="@+id/conforto"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/MainActivityLabelConforto"
+            android:textSize="22sp"
+            android:paddingHorizontal="10dp"
+
+            app:layout_constraintTop_toBottomOf="@+id/labelHospedagem"
+            app:layout_constraintStart_toStartOf="parent"
+            />
+        <RadioButton
+            android:id="@+id/luxo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/MainActivityLabelLuxo"
+            android:textSize="22sp"
+            android:paddingHorizontal="10dp"
+
+            app:layout_constraintTop_toBottomOf="@+id/labelHospedagem"
+            app:layout_constraintStart_toStartOf="parent"
+            />
+    </RadioGroup>
+
+    <TextView
+        android:id="@+id/labelServicos"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/MainActivityLabelServicos"
+        android:textSize="24sp"
+        android:paddingVertical="15dp"
+        android:paddingHorizontal="10dp"
+        android:layout_marginHorizontal="10dp"
+        app:layout_constraintTop_toBottomOf="@+id/hospedagem"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <CheckBox
+        android:id="@+id/transporte"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/MainActivityLabelTransporte"
+        android:textSize="22sp"
+
+        android:paddingHorizontal="10dp"
+        android:layout_marginHorizontal="10dp"
+
+        app:layout_constraintTop_toBottomOf="@+id/labelServicos"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+    <CheckBox
+        android:id="@+id/alimentacao"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/MainActivityLabelAlimentacao"
+        android:textSize="22sp"
+
+        android:paddingHorizontal="10dp"
+        android:layout_marginHorizontal="10dp"
+
+        app:layout_constraintTop_toBottomOf="@+id/transporte"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+    <CheckBox
+        android:id="@+id/passeios"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/MainActivityLabelPasseios"
+        android:textSize="22sp"
+
+        android:paddingHorizontal="10dp"
+        android:layout_marginHorizontal="10dp"
+
+        app:layout_constraintTop_toBottomOf="@+id/alimentacao"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+
+    <Button
+        android:id="@+id/finish"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAlignment="center"
+        android:text="@string/finish"
+        android:paddingVertical="15dp"
+        android:layout_margin="10dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

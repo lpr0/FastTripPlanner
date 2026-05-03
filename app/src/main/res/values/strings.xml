@@ -4,4 +4,13 @@
     <string name="MainActivityLabelDias">Insira o total de dias:</string>
     <string name="MainActivityLabelOrcamento">Insira o orçamento diário:</string>
     <string name="next">Prosseguir</string>
+    <string name="MainActivityLabelHospedagem">Selecione o tipo de hospedagem</string>
+    <string name="MainActivityLabelEconomica">Econômica</string>
+    <string name="MainActivityLabelConforto">Conforto</string>
+    <string name="MainActivityLabelLuxo">Luxo</string>
+    <string name="MainActivityLabelServicos">Escolhas quais serviços extras deseja:</string>
+    <string name="MainActivityLabelTransporte">Transporte - R$ 300,00</string>
+    <string name="MainActivityLabelAlimentacao">Alimentação - R$ 50,00 por dia</string>
+    <string name="MainActivityLabelPasseios">Passeios -  R$ 120,00 por dia</string>
+    <string name="finish">Finalizar</string>
 </resources>
