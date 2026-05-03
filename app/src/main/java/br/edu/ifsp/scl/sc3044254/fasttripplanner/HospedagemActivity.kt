@@ -38,9 +38,9 @@ class HospedagemActivity : AppCompatActivity() {
             val hospedagem = tipoHosp()
             val servicos = ArrayList<String>()
 
-            if (binding.transporte.isActivated) servicos.add("Transporte")
-            if (binding.alimentacao.isActivated) servicos.add("Alimentação")
-            if (binding.passeios.isActivated) servicos.add("Passeios")
+            if (binding.transporte.isChecked) servicos.add("Transporte")
+            if (binding.alimentacao.isChecked) servicos.add("Alimentação")
+            if (binding.passeios.isChecked) servicos.add("Passeios")
 
             if (hospedagem.isBlank()){
                 Toast.makeText(this,
@@ -66,6 +66,6 @@ class HospedagemActivity : AppCompatActivity() {
         if (id == R.id.conforto) return "Conforto"
         if (id == R.id.economica) return "Econômica"
         if (id == R.id.luxo) return "Luxo"
-        return ""
+        return id.toString()
     }
 }

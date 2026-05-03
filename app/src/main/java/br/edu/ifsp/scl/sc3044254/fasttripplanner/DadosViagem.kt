@@ -15,7 +15,7 @@ data class DadosViagem(
                 intent.getStringExtra("destino")?:"",
                 intent.getIntExtra("dias", 1),
                 intent.getDoubleExtra("orcamento", 1.00),
-                intent.getStringExtra("hospedagem")?:"",
+                intent.getStringExtra("tipoHospedagem")?:"",
                 intent.getStringArrayListExtra("servicos")?: ArrayList<String>()
             )
         }
