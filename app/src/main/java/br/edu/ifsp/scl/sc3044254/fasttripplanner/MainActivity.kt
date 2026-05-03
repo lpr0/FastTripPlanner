@@ -35,10 +35,7 @@ class MainActivity : AppCompatActivity() {
 
         hospedagemActivityLauncher = registerForActivityResult(
             ActivityResultContracts.StartActivityForResult(),
-        ) {result ->
-            Toast.makeText(this,
-                "Prencha todos os campos para continuar.", Toast.LENGTH_SHORT).show()
-        }
+        ) {}
 
         binding.next.setOnClickListener { view ->
             val destino = binding.destino.text.toString()

@@ -26,6 +26,10 @@ class HospedagemActivity : AppCompatActivity() {
         }
 
         val dados =  DadosViagem.lerIntent(intent)
-        binding.titulo.text = dados.destino
+
+        binding.back.setOnClickListener {
+            setResult(RESULT_OK)
+            finish()
+        }
     }
 }
