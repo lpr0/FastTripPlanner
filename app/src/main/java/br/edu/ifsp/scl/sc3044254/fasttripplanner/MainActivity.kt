@@ -48,9 +48,8 @@ class MainActivity : AppCompatActivity() {
             if (validarDados(destino, dias, orcamento)) {
                 val hospedagemIntent = Intent(this, HospedagemActivity::class.java)
 
-                hospedagemIntent.putExtra("destino",destino )
-                hospedagemIntent.putExtra("dias", dias)
-                hospedagemIntent.putExtra("orcamento", orcamento)
+                DadosViagem.inserirIntent(hospedagemIntent, destino, dias.toInt(), orcamento.toDouble(),
+                    null, null)
 
                 hospedagemActivityLauncher.launch(hospedagemIntent)
             }
