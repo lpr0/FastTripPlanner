@@ -8,10 +8,9 @@ import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
 import br.edu.ifsp.scl.sc3044254.fasttripplanner.databinding.ActivityHospedagemBinding
-import br.edu.ifsp.scl.sc3044254.fasttripplanner.databinding.ActivityMainBinding
 
 class HospedagemActivity : AppCompatActivity() {
-    private lateinit var resumoActivityLauncher: ActivityResultLauncher<Intent>
+    //private lateinit var resumoActivityLauncher: ActivityResultLauncher<Intent>
     private val binding: ActivityHospedagemBinding by lazy {
         ActivityHospedagemBinding.inflate(layoutInflater)
     }
@@ -19,7 +18,7 @@ class HospedagemActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         enableEdgeToEdge()
-        setContentView(binding.hospedagem)
+        setContentView(binding.main)
         ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main)) { v, insets ->
             val systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars())
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom)
