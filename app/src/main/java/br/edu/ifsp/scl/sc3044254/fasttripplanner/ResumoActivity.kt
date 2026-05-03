@@ -49,6 +49,11 @@ class ResumoActivity : AppCompatActivity() {
             binding.l3.text = "Passeios"
             binding.l3.visibility = View.VISIBLE
         }
+
+        binding.restart.setOnClickListener {
+            setResult(RESULT_OK)
+            finish()
+        }
     }
 
     private fun calctotal (): Double {

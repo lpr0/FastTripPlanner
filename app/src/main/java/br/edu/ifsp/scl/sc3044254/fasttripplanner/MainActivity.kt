@@ -35,7 +35,13 @@ class MainActivity : AppCompatActivity() {
 
         hospedagemActivityLauncher = registerForActivityResult(
             ActivityResultContracts.StartActivityForResult(),
-        ) {}
+        ) {result->
+            if (result.resultCode == RESULT_OK) {
+                binding.destino.text.clear()
+                binding.dias.text.clear()
+                binding.orcamento.text.clear()
+            }
+        }
 
         binding.next.setOnClickListener { view ->
             val destino = binding.destino.text.toString()
