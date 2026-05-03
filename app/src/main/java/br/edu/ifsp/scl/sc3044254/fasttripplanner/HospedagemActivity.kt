@@ -71,6 +71,6 @@ class HospedagemActivity : AppCompatActivity() {
         if (id == R.id.conforto) return "Conforto"
         if (id == R.id.economica) return "Econômica"
         if (id == R.id.luxo) return "Luxo"
-        return id.toString()
+        return ""
     }
 }
