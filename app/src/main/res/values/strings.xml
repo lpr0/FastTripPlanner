@@ -20,4 +20,5 @@
     <string name="restart">Recomeçar</string>
     <string name="back">Voltar</string>
     <string name="MainActivityLabelToDestino">"Destino: "</string>
+    <string name="MainActivityLabelModoEconomico">Modo econômico</string>
 </resources>
